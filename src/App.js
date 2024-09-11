@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+
+function ProfileCard({ name, age, location }) {
+  return (
+    <div className="profile-card">
+      <h2>{name}</h2>
+      <p>Age: {age}</p>
+      <p>Location: {location}</p>
+    </div>
+  );
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="profile-container">
+      <ProfileCard name="John Doe" age={30} location="New York" />
+      <ProfileCard name="Jane Smith" age={25} location="San Francisco" />
+      <ProfileCard name="Ace Reyes" age={27} location="Valenzuela" />
     </div>
   );
 }
