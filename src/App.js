@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
 
-function ProfileCard({ name, age, location }) {
+function ProfileCard({ name,type, location }) {
   return (
     <div className="profile-card">
       <h2>{name}</h2>
-      <p>Age: {age}</p>
+      <p>Type: {type}</p>
       <p>Location: {location}</p>
     </div>
   );
@@ -14,9 +14,9 @@ function ProfileCard({ name, age, location }) {
 function App() {
   return (
     <div className="profile-container">
-      <ProfileCard name="John Doe" age={30} location="New York" />
-      <ProfileCard name="Jane Smith" age={25} location="San Francisco" />
-      <ProfileCard name="Ace Reyes" age={27} location="Valenzuela" />
+      <ProfileCard name="Treecko" type="Grass" location="Hoenn" />
+      <ProfileCard name="Torchic" type="Fire" location="Hoenn" />
+      <ProfileCard name="Mudkip" type="Water" location="Hoenn" />
     </div>
   );
 }

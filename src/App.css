@@ -1,8 +1,11 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #e0f7fa; /* Light blue background */
+  background-color: #e0f7fa; /* Fallback color */
   margin: 0;
   padding: 0;
+  background-image: url('./assets/background.jpg'); 
+  background-size: cover; 
+  background-repeat: no-repeat;
 }
 
 .profile-container {
@@ -19,7 +22,7 @@ body {
   text-align: center;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-/*8afdgga*/
+
 h2 {
   margin-bottom: 10px;
   font-size: 24px;
